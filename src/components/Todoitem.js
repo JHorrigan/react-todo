@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export class Todoitem extends Component {
+class TodoItem extends Component {
     render() {
         return (
             <div>
@@ -10,4 +10,4 @@ export class Todoitem extends Component {
     }
 }
 
-export default Todoitem
+export default TodoItem
