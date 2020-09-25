@@ -11,11 +11,12 @@ class TodoItem extends Component {
             'line-through' : 'none'
         }
     }
+
     render() {
         return (
             <div style={this.getStyle()}>
                 <p>
-                    <input type="checkbox" /> {' '}
+                    <input type="checkbox" onChange={this.props.markComplete}/> {' '}
                     { this.props.todo.title }
                 </p>
             </div>
