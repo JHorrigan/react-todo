@@ -9,7 +9,7 @@ class App extends Component {
       {
         id: 1,
         title: 'Do Task 1',
-        completed: true
+        completed: false
       },
       {
         id: 2,
@@ -24,6 +24,7 @@ class App extends Component {
     ]
   }
 
+  // Toggle Complete
   markComplete = (id) => {
     this.setState({
       todos: this.state.todos.map(todo => {
