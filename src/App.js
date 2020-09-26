@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Header from './components/layout/header';
 import Todos from './components/Todos';
 import AddTodo from './components/AddTodo';
+import About from './components/pages/About';
 import {v4 as uuidv4} from 'uuid';
 
 import './App.css';
@@ -72,6 +73,7 @@ class App extends Component {
                 deleteTask={this.deleteTask} />
               </React.Fragment>
             )} />
+            <Route path="/about" component={About} />
           </div>
         </div>
       </Router>
