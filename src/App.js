@@ -48,10 +48,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Header />
-        <AddTodo />
-        <Todos todos={this.state.todos} markComplete={this.markComplete}
-         deleteTask={this.deleteTask} />
+        <div className="container">
+          <Header />
+          <AddTodo />
+          <Todos todos={this.state.todos} markComplete={this.markComplete}
+          deleteTask={this.deleteTask} />
+        </div>
       </div>
     );
   }
